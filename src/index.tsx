@@ -1,12 +1,13 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import Hello from "./components/Hello";
-// import App from './App';
-import './index.css';
-import registerServiceWorker from './registerServiceWorker';
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
 
-ReactDOM.render(
-    <Hello name="TypeScript" enthusiasmLevel={10}/>,
-    document.getElementById('root') as HTMLElement
-);
-registerServiceWorker();
+import Test from '@components/Test'
+
+const render = () => {
+    ReactDOM.render(
+        <Test />,
+        document.querySelector('#app')
+    )
+}
+
+render()
